@@ -32,13 +32,14 @@ This app connects to a **microcontroller** via **UDP over Wi-Fi** and uses **CBO
 * pyqtgraph
 * numpy
 * scipy
+* scikit-learn
 * cbor2
 * socket (standard lib)
 
 Install via pip:
 
 ```bash
-pip install pyqt5 pyqtgraph numpy scipy cbor2
+pip install pyqt5 pyqtgraph numpy scipy scikit-learn cbor2
 ```
 
 ## ⚙️ How It Works
