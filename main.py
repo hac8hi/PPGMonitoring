@@ -98,11 +98,9 @@ class PPGMonitoring(QMainWindow):
 
         self.bpmLabel = QLabel('Heart Rate : n/a')
         self.rpmLabel = QLabel('Breathing Rate : n/a')
-        self.spo2Label = QLabel('SpO2 : n/a')
 
         self.customizeLabel(self.bpmLabel)
         self.customizeLabel(self.rpmLabel)
-        self.customizeLabel(self.spo2Label)
 
         labelsLayout.addWidget(self.bpmLabel, stretch=1)
         labelsLayout.addWidget(self.rpmLabel, stretch=1)
@@ -112,8 +110,6 @@ class PPGMonitoring(QMainWindow):
         self.bpmLabel.setMaximumHeight(50)
         self.rpmLabel.setMinimumHeight(50)
         self.rpmLabel.setMaximumHeight(50)
-        self.spo2Label.setMinimumHeight(50)
-        self.spo2Label.setMaximumHeight(50)
 
         spacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
         layout.addSpacerItem(spacer)
@@ -178,7 +174,6 @@ class PPGMonitoring(QMainWindow):
                 if self.measures:
                     self.bpmLabel.setText("Heart Rate : " + str(self.measures['bpm']) + " BPM")
                     self.rpmLabel.setText("Breathing Rate : " + str(self.measures['breathingrate']) + " RPM")
-                    self.spo2Label.setText("SpO2 : " + str(self.measures['spo2']) + " %")
             except:
                 pass
     
@@ -202,7 +197,6 @@ class PPGMonitoring(QMainWindow):
         
         self.bpmLabel.setText("BPM: n/a")
         self.rpmLabel.setText("RPM: n/a")
-        self.spo2Label.setText("SpO2: n/a")
 
     def closeEvent(self, event):
         self.sock.close()

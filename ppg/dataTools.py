@@ -5,7 +5,7 @@ from scipy.ndimage import uniform_filter1d
 
 import numpy as np
 
-"""
+
 def pca(data1, data2):
     
     concatData = np.column_stack((data1, data2))
@@ -20,7 +20,7 @@ def detrendData(data):
     data = detrend(data)
     
     return data
-"""
+
 def getSamplerate(data, timerData):
     
     sampleRate = ((len(data) / (timerData[-1]-timerData[0]))*1e3)
