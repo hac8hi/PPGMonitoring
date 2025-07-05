@@ -1,7 +1,7 @@
 
 from scipy.ndimage import uniform_filter1d
-#from scipy.signal import detrend
-#from sklearn.decomposition import PCA
+from scipy.signal import detrend
+from sklearn.decomposition import PCA
 
 import numpy as np
 
