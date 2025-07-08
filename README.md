@@ -2,6 +2,8 @@
 
 A desktop application built with **PyQt5** and **pyqtgraph** that displays real-time physiological signals, including **PPG (Photoplethysmography)**, **heart rate (BPM)**, and **breath rate**.
 
+![image](https://github.com/user-attachments/assets/613575bf-efe5-4ce1-91f0-86a1d6f9c4fd)
+
 ## 🧠 Overview
 
 This app connects to a **microcontroller** via **UDP over Wi-Fi** and uses **CBOR** decoding to retrieve two raw signal channels and their associated timestamps. These signals are then processed and visualized in real time.
